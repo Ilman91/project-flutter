@@ -3,6 +3,7 @@ import 'package:flutter1/size_expanded_stack/LatihanTiga.dart';
 import 'package:flutter1/size_expanded_stack/StackWidget.dart';
 import 'package:flutter1/size_expanded_stack/LayoutDua.dart';
 import 'package:flutter1/size_expanded_stack/LayoutEmpat.dart';
+import 'package:flutter1/size_expanded_stack/LatihanEmpat.dart';
 
 
 void main() {
@@ -18,11 +19,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-        title: Text("Flutter App"),
-        backgroundColor: const Color.fromARGB(255, 150, 148, 140),
+        title: Text("Flutter App", style: TextStyle(color: Colors.black)),
+        backgroundColor: const Color.fromARGB(255, 255, 255, 255),
         centerTitle: true,
        ),
-       body: ProfileWidget(),
+       body: LatihanEmpat(),
       ),
     );
   }

@@ -78,11 +78,6 @@ class LatihanEmpat extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Icon(
-                      Icons.school,
-                      color: const Color.fromARGB(255, 140, 167, 248),
-                      size: 28,
-                    ),
                   ],
                 ),
                 SizedBox(height: 14),
@@ -96,7 +91,7 @@ class LatihanEmpat extends StatelessWidget {
                 ),
                 SizedBox(height: 6),
                 Text(
-                  'Belajar flutter bersama pak Kace',
+                  'Belajar flutter',
                   style: TextStyle(color: Colors.white),
                 ),
                 Spacer(),
@@ -111,7 +106,6 @@ class LatihanEmpat extends StatelessWidget {
                     children: [
                       Text('Mulai Belajar'),
                       SizedBox(width: 8),
-                      Icon(Icons.north_east, size: 12),
                     ],
                   ),
                 ),

@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter1/list/grid.dart';
 import 'package:flutter1/size_expanded_stack/LatihanTiga.dart';
 import 'package:flutter1/size_expanded_stack/StackWidget.dart';
 import 'package:flutter1/size_expanded_stack/LayoutDua.dart';
 import 'package:flutter1/size_expanded_stack/LayoutEmpat.dart';
 import 'package:flutter1/size_expanded_stack/LatihanEmpat.dart';
+import 'package:flutter1/list/grid.dart';
+import 'package:flutter1/list/detailScreen.dart';
+import 'package:flutter1/list/list-view.dart';
 
 
 void main() {
@@ -23,7 +27,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: const Color.fromARGB(255, 255, 255, 255),
         centerTitle: true,
        ),
-       body: LatihanEmpat(),
+       body: ArticleListScreen(),
       ),
     );
   }

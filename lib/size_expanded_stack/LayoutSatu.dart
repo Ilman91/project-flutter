@@ -17,8 +17,8 @@ class KartuProfil extends StatelessWidget {
               color: Colors.black,
               blurRadius: 4,
             ),
-            )
-          ],
+            ),
+          ]
         ),
         child: Row(
           children: [

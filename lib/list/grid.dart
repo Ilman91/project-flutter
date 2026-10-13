@@ -24,7 +24,6 @@ class GridProductPage extends StatelessWidget {
       'price': 'Rp 80.000',
       'image': 'https://picsum.photos/200?4',
     },
-    
   ];
 
   @override
@@ -46,8 +45,7 @@ class GridProductPage extends StatelessWidget {
               borderRadius: BorderRadius.circular(15),
               color: Colors.grey[100],
               boxShadow: const [
-                BoxShadow(
-                  color: Colors.black12, blurRadius: 6),
+                BoxShadow(color: Colors.black12, blurRadius: 6),
               ],
             ),
             child: Stack(

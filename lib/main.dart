@@ -8,7 +8,8 @@ import 'package:flutter1/size_expanded_stack/LatihanEmpat.dart';
 import 'package:flutter1/list/grid.dart';
 import 'package:flutter1/list/detailScreen.dart';
 import 'package:flutter1/list/list-view.dart';
-
+import 'package:flutter1/navigator.dart';
+import 'package:flutter1/routes/app_routes.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,36 +18,37 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key});
   @override
-
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-        title: Text("Flutter App", style: TextStyle(color: Colors.black)),
-        backgroundColor: const Color.fromARGB(255, 255, 255, 255),
-        centerTitle: true,
-       ),
-       body: ArticleListScreen(),
-      ),
+      // home: Scaffold(
+      //   appBar: AppBar(
+      //     title: Text("Flutter App", style: TextStyle(color: Colors.black)),
+      //     backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+      //     centerTitle: true,
+      //   ),
+      //   body: NavigatorWidget(),
+      // ),
+      initialRoute: '/',
+      routes: AppRoutes.routes,
     );
   }
 }
 
 class HelloWidget extends StatelessWidget {
-  const HelloWidget({
-    super.key,
-  });
+  const HelloWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Center(
-       child: Text("Hello Flutter", style: TextStyle(
-       fontSize: 30,
-       fontWeight: FontWeight.bold,
-       color: Colors.cyan,
+      child: Text(
+        "Hello Flutter",
+        style: TextStyle(
+          fontSize: 30,
+          fontWeight: FontWeight.bold,
+          color: Colors.cyan,
+        ),
       ),
-     ),
     );
   }
 }

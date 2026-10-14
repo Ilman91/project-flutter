@@ -45,6 +45,13 @@ class HomePage extends StatelessWidget {
               },
               child: Text('Layout Dua'),
             ),
+            const SizedBox(height: 10),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/form-page');
+              },
+              child: Text('Form Page'),
+            ),
           ],
         ),
       ),

@@ -6,6 +6,7 @@ import 'package:flutter1/pages/home.page.dart';
 import 'package:flutter1/list/list-view.dart';
 import 'package:flutter1/size_expanded_stack/StackWidget.dart';
 import 'package:flutter1/size_expanded_stack/LayoutDua.dart';
+import 'package:flutter1/pages/form_pages.dart';
 
 class AppRoutes {
   static const home = '/';
@@ -14,6 +15,7 @@ class AppRoutes {
   static const articleList = '/article-list';
   static const stackWidget = '/stack-widget';
   static const layoutDua = '/layout-dua';
+  static const formPage = '/form-page';
 
   static Map<String, WidgetBuilder> routes = {
     home: (context) => const HomePage(),
@@ -22,5 +24,6 @@ class AppRoutes {
     articleList: (context) => const ArticleListScreen(),
     stackWidget: (context) => const Stackwidget(),
     layoutDua: (context) => const LayoutDua(),
+    formPage: (context) => const FormPage(),
   };
 }
